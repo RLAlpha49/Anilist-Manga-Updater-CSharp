@@ -10,4 +10,3 @@ namespace AMU_Rewrite;
 public partial class App : Application
 {
 }
-

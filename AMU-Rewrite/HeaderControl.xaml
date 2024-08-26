@@ -1,12 +1,22 @@
-﻿<Window x:Class="AMU_Rewrite.HeaderControl"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:AMU_Rewrite"
-        mc:Ignorable="d"
-        Title="HeaderControl" Height="450" Width="800">
+﻿<UserControl x:Class="AMU_Rewrite.HeaderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Grid>
-        
+        <TextBlock Text="Header"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="24"
+                   Foreground="{DynamicResource TextBrush}"/>
+        <ToggleButton x:Name="ThemeToggleButton"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Right"
+                      Margin="10"
+                      Checked="ThemeToggleButton_Checked"
+                      Unchecked="ThemeToggleButton_Unchecked">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE706;" Width="16" Height="16" Margin="0,0,5,0"/>
+                <TextBlock Text="Dark Mode" VerticalAlignment="Center"/>
+            </StackPanel>
+        </ToggleButton>
     </Grid>
-</Window>
+</UserControl>

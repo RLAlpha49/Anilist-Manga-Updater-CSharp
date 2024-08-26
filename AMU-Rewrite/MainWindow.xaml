@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AMU_Rewrite"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Background="{DynamicResource WindowBackgroundBrush}">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <local:HeaderControl Grid.Row="0" VerticalAlignment="Top"/>
+        
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="2" Margin="10">
+            <Grid>
+                <TextBlock Text="Content Area"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="24"
+                           Foreground="{DynamicResource TextBrush}"/>
+            </Grid>
+        </Border>
+        
+        <local:FooterControl Grid.Row="2" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>

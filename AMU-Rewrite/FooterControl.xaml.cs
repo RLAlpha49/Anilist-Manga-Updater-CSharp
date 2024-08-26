@@ -1,11 +1,12 @@
-﻿using System.Windows;
+﻿using System.Windows.Controls;
 
-namespace AMU_Rewrite;
-
-public partial class FooterControl : Window
+namespace AMU_Rewrite
 {
-    public FooterControl()
+    public partial class FooterControl : UserControl
     {
-        InitializeComponent();
+        public FooterControl()
+        {
+            InitializeComponent();
+        }
     }
 }
