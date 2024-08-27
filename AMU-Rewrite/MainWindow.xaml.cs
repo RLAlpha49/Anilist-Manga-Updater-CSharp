@@ -24,20 +24,8 @@ namespace AMU_Rewrite
             IsDarkMode = false;
         }
 
-        private void ThemeToggleButton_Checked(object sender, RoutedEventArgs e)
-        {
-            IsDarkMode = true;
-            // Apply dark mode resources
-        }
-
-        private void ThemeToggleButton_Unchecked(object sender, RoutedEventArgs e)
-        {
-            IsDarkMode = false;
-            // Apply light mode resources
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }

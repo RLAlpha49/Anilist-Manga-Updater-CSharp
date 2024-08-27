@@ -12,10 +12,10 @@ namespace AMU_Rewrite
         {
             InitializeComponent();
             DataContext = Application.Current.MainWindow.DataContext;
-            
+
             // Fix for the theme not being applied on startup
-            ThemeToggleButton_Checked(null, null);
-            ThemeToggleButton_Unchecked(null, null);
+            ThemeToggleButton_Checked(this, new RoutedEventArgs());
+            ThemeToggleButton_Unchecked(this, new RoutedEventArgs());
         }
 
         private void ThemeToggleButton_Checked(object sender, RoutedEventArgs e)
