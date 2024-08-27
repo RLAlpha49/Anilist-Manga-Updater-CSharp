@@ -13,10 +13,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
-        <local:HeaderControl Grid.Row="0" VerticalAlignment="Top"/>
-        
-        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="2" Margin="10">
+
+        <local:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0"/>
+
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="2" Margin="10,0,10,0">
             <Grid>
                 <TextBlock Text="Content Area"
                            VerticalAlignment="Center"
@@ -25,7 +25,7 @@
                            Foreground="{DynamicResource TextBrush}"/>
             </Grid>
         </Border>
-        
-        <local:FooterControl Grid.Row="2" VerticalAlignment="Bottom"/>
+
+        <local:FooterControl Grid.Row="2" VerticalAlignment="Bottom" Margin="10,0,10,0"/>
     </Grid>
 </Window>

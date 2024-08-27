@@ -11,9 +11,20 @@
 
     <ItemGroup>
       <None Remove="Resources\dark-mode-icon.png" />
-      <Resource Include="Resources\dark-mode-icon.png" />
+      <None Remove="Resources\settings-icon.png" />
+      <Resource Include="Resources\settings-icon.png" />
+      <Resource Include="Resources\home-icon.png" />
+      <None Remove="Resources\home-icon.png" />
+      <None Remove="Resources\home-icon-dark.png" />
+      <Resource Include="Resources\home-icon-dark.png" />
+      <None Remove="Resources\settings-icon-dark.png" />
+      <Resource Include="Resources\settings-icon-dark.png" />
       <None Remove="Resources\light-mode-icon.png" />
       <Resource Include="Resources\light-mode-icon.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\dark-mode-icon.png" />
     </ItemGroup>
 
 </Project>
