@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Media.Imaging;
 
 namespace AMU_Rewrite
@@ -22,30 +23,10 @@ namespace AMU_Rewrite
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(
                 new ResourceDictionary { Source = new Uri("DarkTheme.xaml", UriKind.Relative) });
-            
-            HomeButton.Content = new Image
-            {
-                Source = new BitmapImage(new Uri("pack://application:,,,/Resources/home-icon-dark.png")),
-                Width = 32,
-                Height = 32,
-                Margin = new Thickness(4)
-            };
-            
-            SettingsButton.Content = new Image
-            {
-                Source = new BitmapImage(new Uri("pack://application:,,,/Resources/settings-icon-dark.png")),
-                Width = 32,
-                Height = 32,
-                Margin = new Thickness(4)
-            };
-            
-            ThemeToggleButton.Content = new Image
-            {
-                Source = new BitmapImage(new Uri("pack://application:,,,/Resources/light-mode-icon.png")),
-                Width = 32,
-                Height = 32,
-                Margin = new Thickness(4)
-            };
+
+            SetButtonContent(HomeButton, "pack://application:,,,/Resources/home-icon-dark.png");
+            SetButtonContent(SettingsButton, "pack://application:,,,/Resources/settings-icon-dark.png");
+            SetButtonContent(ThemeToggleButton, "pack://application:,,,/Resources/light-mode-icon.png");
         }
 
         private void ThemeToggleButton_Unchecked(object sender, RoutedEventArgs e)
@@ -54,25 +35,16 @@ namespace AMU_Rewrite
             Application.Current.Resources.MergedDictionaries.Add(
                 new ResourceDictionary { Source = new Uri("LightTheme.xaml", UriKind.Relative) });
 
-            HomeButton.Content = new Image
+            SetButtonContent(HomeButton, "pack://application:,,,/Resources/home-icon.png");
+            SetButtonContent(SettingsButton, "pack://application:,,,/Resources/settings-icon.png");
+            SetButtonContent(ThemeToggleButton, "pack://application:,,,/Resources/dark-mode-icon.png");
+        }
+
+        private void SetButtonContent(ToggleButton button, string imagePath)
+        {
+            button.Content = new Image
             {
-                Source = new BitmapImage(new Uri("pack://application:,,,/Resources/home-icon.png")),
-                Width = 32,
-                Height = 32,
-                Margin = new Thickness(4)
-            };
-            
-            SettingsButton.Content = new Image
-            {
-                Source = new BitmapImage(new Uri("pack://application:,,,/Resources/settings-icon.png")),
-                Width = 32,
-                Height = 32,
-                Margin = new Thickness(4)
-            };
-            
-            ThemeToggleButton.Content = new Image
-            {
-                Source = new BitmapImage(new Uri("pack://application:,,,/Resources/dark-mode-icon.png")),
+                Source = new BitmapImage(new Uri(imagePath)),
                 Width = 32,
                 Height = 32,
                 Margin = new Thickness(4)
