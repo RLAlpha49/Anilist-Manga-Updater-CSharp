@@ -9,4 +9,11 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Resources\dark-mode-icon.png" />
+      <Resource Include="Resources\dark-mode-icon.png" />
+      <None Remove="Resources\light-mode-icon.png" />
+      <Resource Include="Resources\light-mode-icon.png" />
+    </ItemGroup>
+
 </Project>
