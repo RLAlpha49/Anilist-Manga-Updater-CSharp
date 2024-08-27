@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace AMU_Rewrite
+namespace AMU_Rewrite.GUI
 {
     public partial class ContentWindow : Window
     {

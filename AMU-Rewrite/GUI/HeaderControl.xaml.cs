@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media.Imaging;
 
-namespace AMU_Rewrite
+namespace AMU_Rewrite.GUI
 {
     public partial class HeaderControl : UserControl
     {
@@ -22,22 +22,22 @@ namespace AMU_Rewrite
         {
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(
-                new ResourceDictionary { Source = new Uri("DarkTheme.xaml", UriKind.Relative) });
+                new ResourceDictionary { Source = new Uri("GUI/Themes/DarkTheme.xaml", UriKind.Relative) });
 
-            SetButtonContent(HomeButton, "pack://application:,,,/Resources/home-icon-dark.png");
-            SetButtonContent(SettingsButton, "pack://application:,,,/Resources/settings-icon-dark.png");
-            SetButtonContent(ThemeToggleButton, "pack://application:,,,/Resources/light-mode-icon.png");
+            SetButtonContent(HomeButton, "pack://application:,,,/GUI/Resources/home-icon-dark.png");
+            SetButtonContent(SettingsButton, "pack://application:,,,/GUI/Resources/settings-icon-dark.png");
+            SetButtonContent(ThemeToggleButton, "pack://application:,,,/GUI/Resources/light-mode-icon.png");
         }
 
         private void ThemeToggleButton_Unchecked(object sender, RoutedEventArgs e)
         {
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(
-                new ResourceDictionary { Source = new Uri("LightTheme.xaml", UriKind.Relative) });
+                new ResourceDictionary { Source = new Uri("GUI/Themes/LightTheme.xaml", UriKind.Relative) });
 
-            SetButtonContent(HomeButton, "pack://application:,,,/Resources/home-icon.png");
-            SetButtonContent(SettingsButton, "pack://application:,,,/Resources/settings-icon.png");
-            SetButtonContent(ThemeToggleButton, "pack://application:,,,/Resources/dark-mode-icon.png");
+            SetButtonContent(HomeButton, "pack://application:,,,/GUI/Resources/home-icon.png");
+            SetButtonContent(SettingsButton, "pack://application:,,,/GUI/Resources/settings-icon.png");
+            SetButtonContent(ThemeToggleButton, "pack://application:,,,/GUI/Resources/dark-mode-icon.png");
         }
 
         private void SetButtonContent(ToggleButton button, string imagePath)

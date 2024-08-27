@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace AMU_Rewrite
+namespace AMU_Rewrite.GUI
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {

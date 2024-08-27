@@ -12,19 +12,52 @@
     <ItemGroup>
       <None Remove="Resources\dark-mode-icon.png" />
       <None Remove="Resources\settings-icon.png" />
-      <Resource Include="Resources\settings-icon.png" />
-      <Resource Include="Resources\home-icon.png" />
       <None Remove="Resources\home-icon.png" />
       <None Remove="Resources\home-icon-dark.png" />
-      <Resource Include="Resources\home-icon-dark.png" />
       <None Remove="Resources\settings-icon-dark.png" />
-      <Resource Include="Resources\settings-icon-dark.png" />
       <None Remove="Resources\light-mode-icon.png" />
-      <Resource Include="Resources\light-mode-icon.png" />
     </ItemGroup>
 
     <ItemGroup>
-      <Resource Include="Resources\dark-mode-icon.png" />
+      <Page Update="GUI\HeaderControl.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="GUI\FooterControl.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="GUI\ContentWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="GUI\MainWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="GUI\Themes\LightTheme.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="GUI\Themes\DarkTheme.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="GUI\Resources\dark-mode-icon.png" />
+      <Resource Include="GUI\Resources\home-icon-dark.png" />
+      <Resource Include="GUI\Resources\home-icon.png" />
+      <Resource Include="GUI\Resources\light-mode-icon.png" />
+      <Resource Include="GUI\Resources\settings-icon-dark.png" />
+      <Resource Include="GUI\Resources\settings-icon.png" />
     </ItemGroup>
 
 </Project>
