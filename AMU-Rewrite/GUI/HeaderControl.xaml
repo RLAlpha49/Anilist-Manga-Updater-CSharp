@@ -19,22 +19,17 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <TextBlock Text="Header"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   FontSize="24"
-                   Foreground="{DynamicResource TextBrush}"/>
         <StackPanel Orientation="Horizontal"
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Left"
-                    Margin="0,0,0,0">
+                    Margin="0,0,0,-2.8">
             <Border VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="10,0,5,0"
                     Background="{DynamicResource DarkerWindowBackgroundBrush}"
                     BorderBrush="Black"
-                    BorderThickness="1"
-                    CornerRadius="5">
+                    BorderThickness="2, 2, 2, 0"
+                    CornerRadius="5, 5, 0 , 0">
                 <ToggleButton x:Name="HomeButton"
                               Background="Transparent"
                               Style="{StaticResource NoHoverToggleButton}">
@@ -60,8 +55,8 @@
                     Margin="5,0,0,0"
                     Background="{DynamicResource DarkerWindowBackgroundBrush}"
                     BorderBrush="Black"
-                    BorderThickness="1"
-                    CornerRadius="5">
+                    BorderThickness="2, 2, 2, 0"
+                    CornerRadius="5, 5, 0 , 0">
                 <ToggleButton x:Name="SettingsButton"
                               Background="Transparent"
                               Style="{StaticResource NoHoverToggleButton}">
@@ -83,12 +78,31 @@
                 </ToggleButton>
             </Border>
         </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="0,0,0,0">
+            <Border VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="0"
+                    Background="{DynamicResource DarkerWindowBackgroundBrush}"
+                    BorderBrush="Black"
+                    BorderThickness="2, 2, 2, 2"
+                    CornerRadius="10">
+                <TextBlock Text="Header"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="28"
+                           Foreground="{DynamicResource TextBrush}"
+                           Margin="6"/>
+            </Border>
+        </StackPanel>
         <Border VerticalAlignment="Top"
                 HorizontalAlignment="Right"
                 Margin="10"
                 Background="{DynamicResource DarkerWindowBackgroundBrush}"
                 BorderBrush="Black"
-                BorderThickness="1"
+                BorderThickness="2"
                 CornerRadius="5">
             <ToggleButton x:Name="ThemeToggleButton"
                           Background="Transparent"

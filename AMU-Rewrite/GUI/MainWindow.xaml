@@ -14,9 +14,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <gui:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0"/>
+        <gui:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0" Panel.ZIndex="1"/>
 
-        <Border Grid.Row="1" CornerRadius="10" BorderBrush="Black" BorderThickness="2" Margin="10,0,10,10" Background="{DynamicResource DarkerWindowBackgroundBrush}">
+        <Border Grid.Row="1" CornerRadius="10" BorderBrush="Black" BorderThickness="2.7" Margin="10,0,10,10" Background="{DynamicResource DarkerWindowBackgroundBrush}">
             <Grid>
                 <TextBlock Text="Content Area"
                            VerticalAlignment="Center"
