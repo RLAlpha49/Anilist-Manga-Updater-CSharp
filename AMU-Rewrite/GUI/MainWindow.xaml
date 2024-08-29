@@ -12,7 +12,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <gui:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0"/>
@@ -26,7 +25,5 @@
                            Foreground="{DynamicResource TextBrush}"/>
             </Grid>
         </Border>
-
-        <gui:FooterControl Grid.Row="2" VerticalAlignment="Bottom" Margin="10,0,10,0"/>
     </Grid>
 </Window>

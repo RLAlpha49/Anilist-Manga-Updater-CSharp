@@ -28,46 +28,60 @@
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Left"
                     Margin="0,0,0,0">
-            <ToggleButton x:Name="HomeButton"
-                          Background="Transparent"
-                          Style="{StaticResource NoHoverToggleButton}"
-                          Margin="10,0,5,0">
-                <Image Width="32" Height="32" Margin="4"
-                       RenderTransformOrigin="0.5,0.5">
-                    <Image.Style>
-                        <Style TargetType="Image">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
-                                    <Setter Property="Source" Value="Resources/home-icon-dark.png"/>
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
-                                    <Setter Property="Source" Value="Resources/home-icon.png"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Image.Style>
-                </Image>
-            </ToggleButton>
-            <ToggleButton x:Name="SettingsButton"
-                          Background="Transparent"
-                          Style="{StaticResource NoHoverToggleButton}"
-                          Margin="5,0,0,0">
-                <Image Width="32" Height="32" Margin="4"
-                       RenderTransformOrigin="0.5,0.5">
-                    <Image.Style>
-                        <Style TargetType="Image">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
-                                    <Setter Property="Source" Value="Resources/settings-icon-dark.png"/>
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
-                                    <Setter Property="Source" Value="Resources/settings-icon.png"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Image.Style>
-                </Image>
-            </ToggleButton>
+            <Border VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,5,0"
+                    Background="Transparent"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="5">
+                <ToggleButton x:Name="HomeButton"
+                              Background="Transparent"
+                              Style="{StaticResource NoHoverToggleButton}">
+                    <Image Width="32" Height="32" Margin="4"
+                           RenderTransformOrigin="0.5,0.5">
+                        <Image.Style>
+                            <Style TargetType="Image">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
+                                        <Setter Property="Source" Value="Resources/home-icon-dark.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
+                                        <Setter Property="Source" Value="Resources/home-icon.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </ToggleButton>
+            </Border>
+            <Border VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="5,0,0,0"
+                    Background="Transparent"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="5">
+                <ToggleButton x:Name="SettingsButton"
+                              Background="Transparent"
+                              Style="{StaticResource NoHoverToggleButton}">
+                    <Image Width="32" Height="32" Margin="4"
+                           RenderTransformOrigin="0.5,0.5">
+                        <Image.Style>
+                            <Style TargetType="Image">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
+                                        <Setter Property="Source" Value="Resources/settings-icon-dark.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
+                                        <Setter Property="Source" Value="Resources/settings-icon.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </ToggleButton>
+            </Border>
         </StackPanel>
         <Border VerticalAlignment="Top"
                 HorizontalAlignment="Right"
