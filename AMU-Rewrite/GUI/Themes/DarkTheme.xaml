@@ -4,4 +4,5 @@
     <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}"/>
     <Color x:Key="TextColor">White</Color>
     <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}"/>
+    <SolidColorBrush x:Key="DarkerWindowBackgroundBrush" Color="{StaticResource DarkModeDarkerBackgroundColor}"/>
 </ResourceDictionary>

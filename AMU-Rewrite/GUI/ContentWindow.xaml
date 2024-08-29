@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ContentWindow" Height="300" Width="600"
         Background="{DynamicResource WindowBackgroundBrush}">
-    <Grid>
+    <Grid Background="{DynamicResource DarkerWindowBackgroundBrush}">
         <TextBlock Text="Content Area"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
