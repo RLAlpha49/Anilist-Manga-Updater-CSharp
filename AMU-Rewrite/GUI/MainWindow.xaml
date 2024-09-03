@@ -17,13 +17,7 @@
         <gui:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0" Panel.ZIndex="1"/>
 
         <Border Grid.Row="1" CornerRadius="10" BorderBrush="Black" BorderThickness="2.7" Margin="10,0,10,10" Background="{DynamicResource DarkerWindowBackgroundBrush}">
-            <Grid>
-                <TextBlock Text="Content Area"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           FontSize="24"
-                           Foreground="{DynamicResource TextBrush}"/>
-            </Grid>
+            <gui:ContentUserControl x:Name="MainContentControl" />
         </Border>
     </Grid>
 </Window>

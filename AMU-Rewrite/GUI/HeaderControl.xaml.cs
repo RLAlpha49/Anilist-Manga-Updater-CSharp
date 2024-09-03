@@ -50,5 +50,17 @@ namespace AMU_Rewrite.GUI
                 Margin = new Thickness(4)
             };
         }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = Application.Current.MainWindow as MainWindow;
+            mainWindow?.ContentUserControlInstance.SetContent(new HomeContent());
+        }
+
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = Application.Current.MainWindow as MainWindow;
+            mainWindow?.ContentUserControlInstance.SetContent(new SettingsContent());
+        }
     }
 }

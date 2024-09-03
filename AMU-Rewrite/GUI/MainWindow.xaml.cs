@@ -17,11 +17,15 @@ namespace AMU_Rewrite.GUI
             }
         }
 
+        public ContentUserControl ContentUserControlInstance { get; private set; }
+
         public MainWindow()
         {
             InitializeComponent();
             DataContext = this;
             IsDarkMode = false;
+            ContentUserControlInstance = new ContentUserControl();
+            MainContentControl.Content = ContentUserControlInstance;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
