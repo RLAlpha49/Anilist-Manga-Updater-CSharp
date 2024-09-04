@@ -1,12 +1,11 @@
 ﻿using System.Windows.Controls;
 
-namespace AMU_Rewrite.GUI
+namespace AMU_Rewrite.GUI;
+
+public partial class HomeContent : UserControl
 {
-    public partial class HomeContent : UserControl
+    public HomeContent()
     {
-        public HomeContent()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

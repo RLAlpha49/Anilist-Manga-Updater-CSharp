@@ -3,20 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AMU_Rewrite"
         xmlns:gui="clr-namespace:AMU_Rewrite.GUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="1100"
         Background="{DynamicResource WindowBackgroundBrush}">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <gui:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0" Panel.ZIndex="1"/>
+        <gui:HeaderControl Grid.Row="0" VerticalAlignment="Top" Margin="10,0,10,0" Panel.ZIndex="1" />
 
-        <Border Grid.Row="1" CornerRadius="10" BorderBrush="Black" BorderThickness="2.7" Margin="10,0,10,10" Background="{DynamicResource DarkerWindowBackgroundBrush}">
+        <Border Grid.Row="1" CornerRadius="10" BorderBrush="Black" BorderThickness="2.7" Margin="10,0,10,10"
+                Background="{DynamicResource DarkerWindowBackgroundBrush}">
             <gui:ContentUserControl x:Name="MainContentControl" />
         </Border>
     </Grid>

@@ -11,7 +11,7 @@
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 CornerRadius="5,5,0,0">
                             <ContentPresenter HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"/>
+                                              VerticalAlignment="Center" />
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
@@ -40,10 +40,10 @@
                             <Style TargetType="Image">
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
-                                        <Setter Property="Source" Value="Resources/home-icon-dark.png"/>
+                                        <Setter Property="Source" Value="Resources/home-icon-dark.png" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
-                                        <Setter Property="Source" Value="Resources/home-icon.png"/>
+                                        <Setter Property="Source" Value="Resources/home-icon.png" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -68,10 +68,10 @@
                             <Style TargetType="Image">
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
-                                        <Setter Property="Source" Value="Resources/settings-icon-dark.png"/>
+                                        <Setter Property="Source" Value="Resources/settings-icon-dark.png" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
-                                        <Setter Property="Source" Value="Resources/settings-icon.png"/>
+                                        <Setter Property="Source" Value="Resources/settings-icon.png" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -96,7 +96,7 @@
                            HorizontalAlignment="Center"
                            FontSize="28"
                            Foreground="{DynamicResource TextBrush}"
-                           Margin="6"/>
+                           Margin="6" />
             </Border>
         </StackPanel>
         <Border VerticalAlignment="Top"
@@ -117,10 +117,10 @@
                         <Style TargetType="Image">
                             <Style.Triggers>
                                 <DataTrigger Binding="{Binding IsDarkMode}" Value="True">
-                                    <Setter Property="Source" Value="Resources/light-mode-icon.png"/>
+                                    <Setter Property="Source" Value="Resources/light-mode-icon.png" />
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding IsDarkMode}" Value="False">
-                                    <Setter Property="Source" Value="Resources/dark-mode-icon.png"/>
+                                    <Setter Property="Source" Value="Resources/dark-mode-icon.png" />
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>

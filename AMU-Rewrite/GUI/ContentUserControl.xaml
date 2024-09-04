@@ -2,6 +2,6 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Grid Background="{DynamicResource DarkerWindowBackgroundBrush}">
-        <ContentControl x:Name="MainContentControl"/>
+        <ContentControl x:Name="MainContentControl" />
     </Grid>
 </UserControl>

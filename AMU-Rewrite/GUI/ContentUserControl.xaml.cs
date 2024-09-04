@@ -1,19 +1,17 @@
-﻿using System;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
-namespace AMU_Rewrite.GUI
+namespace AMU_Rewrite.GUI;
+
+public partial class ContentUserControl : UserControl
 {
-    public partial class ContentUserControl : UserControl
+    public ContentUserControl()
     {
-        public ContentUserControl()
-        {
-            InitializeComponent();
-            SetContent(new HomeContent());
-        }
+        InitializeComponent();
+        SetContent(new HomeContent());
+    }
 
-        public void SetContent(UserControl content)
-        {
-            MainContentControl.Content = content;
-        }
+    public void SetContent(UserControl content)
+    {
+        MainContentControl.Content = content;
     }
 }

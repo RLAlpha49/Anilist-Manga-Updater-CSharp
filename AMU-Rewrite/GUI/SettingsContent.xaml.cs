@@ -1,12 +1,11 @@
 ﻿using System.Windows.Controls;
 
-namespace AMU_Rewrite.GUI
+namespace AMU_Rewrite.GUI;
+
+public partial class SettingsContent : UserControl
 {
-    public partial class SettingsContent : UserControl
+    public SettingsContent()
     {
-        public SettingsContent()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

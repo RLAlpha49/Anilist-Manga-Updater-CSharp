@@ -5,6 +5,6 @@
         <TextBlock Text="Home Content"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
-                   FontSize="24"/>
+                   FontSize="24" />
     </Grid>
 </UserControl>
