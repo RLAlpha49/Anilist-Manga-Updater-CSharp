@@ -5,16 +5,18 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/GUI/Themes/LightTheme.xaml"/>
-                <ResourceDictionary Source="/GUI/Themes/DarkTheme.xaml"/>
+                <ResourceDictionary Source="/GUI/Themes/LightTheme.xaml" />
+                <ResourceDictionary Source="/GUI/Themes/DarkTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <!-- Define the darker background brushes for light and dark modes -->
             <Color x:Key="LightModeDarkerBackgroundColor">#E0E0E0</Color>
             <Color x:Key="DarkModeDarkerBackgroundColor">#303030</Color>
 
-            <SolidColorBrush x:Key="LightModeDarkerWindowBackgroundBrush" Color="{StaticResource LightModeDarkerBackgroundColor}"/>
-            <SolidColorBrush x:Key="DarkModeDarkerWindowBackgroundBrush" Color="{StaticResource DarkModeDarkerBackgroundColor}"/>
+            <SolidColorBrush x:Key="LightModeDarkerWindowBackgroundBrush"
+                             Color="{StaticResource LightModeDarkerBackgroundColor}" />
+            <SolidColorBrush x:Key="DarkModeDarkerWindowBackgroundBrush"
+                             Color="{StaticResource DarkModeDarkerBackgroundColor}" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -52,13 +52,16 @@ public partial class HeaderControl : UserControl
 
     private void HomeButton_Click(object sender, RoutedEventArgs e)
     {
-        var mainWindow = Application.Current.MainWindow as MainWindow;
-        mainWindow?.ContentUserControlInstance.SetContent(new HomeContent());
+        ((MainWindow)Application.Current.MainWindow).HomeButton_Click(sender, e);
     }
 
     private void SettingsButton_Click(object sender, RoutedEventArgs e)
     {
-        var mainWindow = Application.Current.MainWindow as MainWindow;
-        mainWindow?.ContentUserControlInstance.SetContent(new SettingsContent());
+        ((MainWindow)Application.Current.MainWindow).SettingsButton_Click(sender, e);
+    }
+
+    private void StartButton_Click(object sender, RoutedEventArgs e)
+    {
+        ((MainWindow)Application.Current.MainWindow).StartButton_Click(sender, e);
     }
 }

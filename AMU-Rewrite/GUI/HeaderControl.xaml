@@ -87,16 +87,21 @@
             <Border VerticalAlignment="Center"
                     HorizontalAlignment="Center"
                     Margin="0"
-                    Background="{DynamicResource DarkerWindowBackgroundBrush}"
+                    Background="Green"
                     BorderBrush="Black"
                     BorderThickness="2, 2, 2, 2"
                     CornerRadius="10">
-                <TextBlock Text="Header"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           FontSize="28"
-                           Foreground="{DynamicResource TextBrush}"
-                           Margin="6" />
+                <ToggleButton x:Name="StartButton"
+                              Background="Transparent"
+                              Style="{StaticResource NoHoverToggleButton}"
+                              Click="StartButton_Click">
+                    <TextBlock Text="Start"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               FontSize="24"
+                               Foreground="White"
+                               Margin="4" />
+                </ToggleButton>
             </Border>
         </StackPanel>
         <Border VerticalAlignment="Top"
