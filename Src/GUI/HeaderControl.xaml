@@ -33,7 +33,8 @@
                 <ToggleButton x:Name="HomeButton"
                               Background="Transparent"
                               Style="{StaticResource NoHoverToggleButton}"
-                              Click="HomeButton_Click">
+                              Click="HomeButton_Click"
+                              BorderThickness="0">
                     <Image Width="32" Height="32" Margin="4"
                            RenderTransformOrigin="0.5,0.5">
                         <Image.Style>
@@ -61,7 +62,8 @@
                 <ToggleButton x:Name="SettingsButton"
                               Background="Transparent"
                               Style="{StaticResource NoHoverToggleButton}"
-                              Click="SettingsButton_Click">
+                              Click="SettingsButton_Click"
+                              BorderThickness="0">
                     <Image Width="32" Height="32" Margin="4"
                            RenderTransformOrigin="0.5,0.5">
                         <Image.Style>
@@ -89,17 +91,19 @@
                     Margin="0"
                     Background="Green"
                     BorderBrush="Black"
-                    BorderThickness="2, 2, 2, 2"
+                    BorderThickness="2"
                     CornerRadius="10">
                 <ToggleButton x:Name="StartButton"
                               Background="Transparent"
                               Style="{StaticResource NoHoverToggleButton}"
-                              Click="StartButton_Click">
+                              Click="StartButton_Click"
+                              BorderThickness="0">
                     <TextBlock Text="Start"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Center"
                                FontSize="24"
                                Foreground="White"
+                               Background="Transparent"
                                Margin="4" />
                 </ToggleButton>
             </Border>
@@ -115,7 +119,8 @@
                           Background="Transparent"
                           Style="{StaticResource NoHoverToggleButton}"
                           Checked="ThemeToggleButton_Checked"
-                          Unchecked="ThemeToggleButton_Unchecked">
+                          Unchecked="ThemeToggleButton_Unchecked"
+                          BorderThickness="0">
                 <Image Width="32" Height="32" Margin="4"
                        RenderTransformOrigin="0.5,0.5">
                     <Image.Style>
