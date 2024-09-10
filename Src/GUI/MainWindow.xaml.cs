@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace AMU_Rewrite.GUI;
+namespace Anilist_Manga_Updater_CSharp.GUI;
 
 public partial class MainWindow : Window, INotifyPropertyChanged
 {

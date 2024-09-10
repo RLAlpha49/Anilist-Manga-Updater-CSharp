@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace AMU_Rewrite;
+namespace Anilist_Manga_Updater_CSharp;
 
 /// <summary>
 ///     Interaction logic for App.xaml

@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media.Imaging;
 
-namespace AMU_Rewrite.GUI;
+namespace Anilist_Manga_Updater_CSharp.GUI;
 
 public partial class HeaderControl : UserControl
 {

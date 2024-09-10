@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace AMU_Rewrite.GUI;
+namespace Anilist_Manga_Updater_CSharp.GUI;
 
 public partial class SettingsContent : UserControl
 {

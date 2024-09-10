@@ -3,7 +3,7 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net8.0-windows</TargetFramework>
-        <RootNamespace>AMU_Rewrite</RootNamespace>
+        <RootNamespace>Anilist_Manga_Updater_CSharp</RootNamespace>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UseWPF>true</UseWPF>

@@ -1,9 +1,9 @@
-﻿<Window x:Class="AMU_Rewrite.GUI.MainWindow"
+﻿<Window x:Class="Anilist_Manga_Updater_CSharp.GUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:gui="clr-namespace:AMU_Rewrite.GUI"
+        xmlns:gui="clr-namespace:Anilist_Manga_Updater_CSharp.GUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="1100"
         Background="{DynamicResource WindowBackgroundBrush}">
